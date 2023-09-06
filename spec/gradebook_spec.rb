@@ -28,7 +28,7 @@ RSpec.describe Gradebook do
     expect(gradebook.courses).to eq([course1, course2])
   end
 
-  xit "can list all students in hash" do
+  it "can list all students in hash" do
     gradebook = Gradebook.new("Tina")
     course1 = Course.new("Calculus", 2)
     course2 = Course.new("Composition", 1)
@@ -40,7 +40,7 @@ RSpec.describe Gradebook do
     course1.enroll(student1)
     course1.enroll(student2)
     course2.enroll(student3)
-    require "pry"; binding.pry
+    #require "pry"; binding.pry
   end
 
   it "lists students below threshold" do
